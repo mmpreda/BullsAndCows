@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">BullsAndCows</string>
+    <string name="game_description">Let\'s play Bulls and Cows!\nYou\'ll write down a number and I\'ll guess what the number is. Each time your you\'ll make a guess, I\'ll provide a hint that indicates how many digits in said guess match the secret number exactly in both digit and position (called "bulls") and how many digits match the secret number but locate in the wrong position (called "cows"). Oh, and you have 9 lives.\n\nGood luck!\n</string>
+
+    <string name="button_try">TRY</string>
+    <string name="button_howtoplay">How to play</string>
+    <string name="button_play">Play</string>
+    <string name="button_back">Back</string>
+    <string name="button_back_home">Back to home</string>
+    <string name="button_play_again">Play again</string>
+    <string name="button_halloffame">Hall of fame</string>
+
+    <string name="button_easy">Easy</string>
+    <string name="button_medium">Medium</string>
+    <string name="button_hard">Hard</string>
+
+    <string name="button_register_me">Register me!</string>
+
+    <string name="tv_guess_number">Guess number</string>
+    <string name="tv_choose_difficulty">Choose difficulty:</string>
+    <string name="tv_you_won">You won!!</string>
+    <string name="tv_winner_indications">Enter your name \nto register to the Hall of Fame :</string>
+    <string name="tv_lives_left">Lives left: %1$d  </string>
+    <string name="tv_score">Score: %1$d</string>
+
+    <string name="hint_number">Insert a %1$d-digit number here</string>
+    <string name="hint_player_name">Insert your name here</string>
+</resources>

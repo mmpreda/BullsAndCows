@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_winner"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    tools:context="ro.devacademy.mada.bullsandcows.WinnerActivity">
+
+    <TextView
+        android:id="@+id/textView_youWon_message"
+        android:text="@string/tv_you_won"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/textView_score_display"
+        android:text="@string/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_below="@+id/textView_youWon_message"
+        />
+
+    <TextView
+        android:id="@+id/textView_winnerIndication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_winner_indications"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView_score_display"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:id="@+id/editText_playerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_winnerIndication"
+        android:hint="@string/hint_player_name"
+        android:textSize="18sp"
+        android:inputType="textPersonName"
+        />
+
+    <TextView
+        android:id="@+id/textView_forErrMsgPN"
+        android:text=""
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:background="#ffe6e6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_winnerIndication"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        />
+
+    <Button
+        android:id="@+id/button_registerMe"
+        android:text="@string/button_register_me"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_forErrMsgPN"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:background="#69b46a"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        />
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/pictures_sublayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        tools:context="ro.devacademy.mada.bullsandcows.FirstActivity">
+
+
+        <ImageView
+            android:id="@+id/cow_picture"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:src="@drawable/cow"
+            />
+
+        <ImageView
+            android:id="@+id/bull_picture"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:src="@drawable/bull"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

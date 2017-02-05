@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_second"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    tools:context="ro.devacademy.mada.bullsandcows.SecondActivity">
+
+    <TextView
+        android:id="@+id/textView_GuessNumber"
+        android:text="@string/tv_guess_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+    />
+
+    <TextView
+        android:id="@+id/textView_lives_countdown"
+        android:text="@string/tv_lives_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView_GuessNumber"
+        />
+
+
+    <ScrollView
+        android:id="@+id/scroller_id"
+        android:layout_below="@id/textView_lives_countdown"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="140dp"
+        android:scrollbars="vertical"
+        android:fillViewport="true">
+
+
+        <TextView
+            android:id="@+id/textView_hints"
+            android:text="\n"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            />
+
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/editText_numberInserted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scroller_id"
+        android:hint="@string/hint_number"
+        android:textSize="18sp"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:id="@+id/textView_forErrMsg"
+        android:text=""
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:background="#ffe6e6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_numberInserted"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        />
+
+    <Button
+        android:id="@+id/button_try"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_forErrMsg"
+        android:layout_centerHorizontal="true"
+        android:text="@string/button_try"
+        android:textColor="#FFFFFF"
+        android:background="#69b46a"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        />
+
+    <Button
+        android:id="@+id/button_play_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_try"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/button_play_again"
+        android:textColor="#FFFFFF"
+        android:background="#69b46a"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        />
+
+
+</RelativeLayout>
