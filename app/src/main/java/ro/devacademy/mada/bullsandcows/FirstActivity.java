@@ -14,7 +14,7 @@ public class FirstActivity extends AppCompatActivity {
 
     /** TO DO
      *
-     * A welcome message, something to fill up the space
+     * A welcome message, something to fill up the space (esp for tablet it looks bad)
      * Check how the activities look in landscape
      *
      */
