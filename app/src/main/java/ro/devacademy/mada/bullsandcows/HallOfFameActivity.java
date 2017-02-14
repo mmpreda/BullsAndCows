@@ -11,6 +11,9 @@ import com.google.gson.Gson;
 import net.alexandroid.shpref.ShPref;
 import java.util.ArrayList;
 
+/**
+ *  The Hall of Fame (list) should be sorted descending!!
+ */
 
 public class HallOfFameActivity extends AppCompatActivity {
 
